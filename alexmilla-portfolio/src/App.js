@@ -35,6 +35,29 @@ function App() {
           </ul>
         </p>
       </section>
+
+      <section className="card">
+        <h2>Proyectos</h2>
+        <p>
+          Algunos de los proyectos en los que he trabajado incluyen:
+          <ul>
+            <li>Una app móvil para gestión de tareas utilizando Swift.</li>
+            <li>Un sistema web para análisis de datos en Python.</li>
+            <li>Interfaces modernas y responsivas con React.</li>
+          </ul>
+        </p>
+      </section>
+      <section className="card">
+        <h2>Proyectos</h2>
+        <p>
+          Algunos de los proyectos en los que he trabajado incluyen:
+          <ul>
+            <li>Una app móvil para gestión de tareas utilizando Swift.</li>
+            <li>Un sistema web para análisis de datos en Python.</li>
+            <li>Interfaces modernas y responsivas con React.</li>
+          </ul>
+        </p>
+      </section>
     </div>
   );
 }
