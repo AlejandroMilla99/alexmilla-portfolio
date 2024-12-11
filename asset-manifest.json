@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/alexmilla-portfolio/static/css/main.12e1d733.css",
+    "main.js": "/alexmilla-portfolio/static/js/main.31cac5a6.js",
+    "static/js/488.f680d99c.chunk.js": "/alexmilla-portfolio/static/js/488.f680d99c.chunk.js",
+    "index.html": "/alexmilla-portfolio/index.html",
+    "main.12e1d733.css.map": "/alexmilla-portfolio/static/css/main.12e1d733.css.map",
+    "main.31cac5a6.js.map": "/alexmilla-portfolio/static/js/main.31cac5a6.js.map",
+    "488.f680d99c.chunk.js.map": "/alexmilla-portfolio/static/js/488.f680d99c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.12e1d733.css",
+    "static/js/main.31cac5a6.js"
+  ]
+}
