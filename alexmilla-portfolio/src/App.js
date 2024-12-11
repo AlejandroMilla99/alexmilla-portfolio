@@ -1,5 +1,7 @@
 import React from "react";
 import "./App.css";
+// eslint-disable-next-line no-unused-vars
+import images from "./resources/images";
 
 function App() {
   return (
@@ -26,51 +28,35 @@ function App() {
 
       <section className="card">
         <h2>Proyectos</h2>
-        <p>
-          Algunos de los proyectos en los que he trabajado incluyen:
+        <p>Algunos de los proyectos en los que he trabajado incluyen:</p>
           <ul>
             <li>Una app móvil para gestión de tareas utilizando Swift.</li>
             <li>Un sistema web para análisis de datos en Python.</li>
             <li>Interfaces modernas y responsivas con React.</li>
           </ul>
-        </p>
-      </section>
-
-      <section className="card">
-        <h2>Proyectos</h2>
-        <p>
-          Algunos de los proyectos en los que he trabajado incluyen:
-          <ul>
-            <li>Una app móvil para gestión de tareas utilizando Swift.</li>
-            <li>Un sistema web para análisis de datos en Python.</li>
-            <li>Interfaces modernas y responsivas con React.</li>
-          </ul>
-        </p>
       </section>
       <section className="card">
         <h2>Proyectos</h2>
-        <p>
-          Algunos de los proyectos en los que he trabajado incluyen:
+        <p>Algunos de los proyectos en los que he trabajado incluyen:</p>
           <ul>
             <li>Una app móvil para gestión de tareas utilizando Swift.</li>
             <li>Un sistema web para análisis de datos en Python.</li>
             <li>Interfaces modernas y responsivas con React.</li>
           </ul>
-        </p>
       </section>
       <footer className="App-footer">
         <div className="social-icons">
           <a href="mailto:alejandromilla99@gmail.com" target="_blank" rel="noopener noreferrer">
-            <img src="./resources/mail.png" alt="Correo" className="social-icon" />
+            <img width="50px" height="50px" src={images.mail} alt="Correo" className="social-icon" />
           </a>
           <a href="https://www.linkedin.com/in/alejandro-milla-3ba742209/" target="_blank" rel="noopener noreferrer">
-            <img src="./resources/linkedin.png" alt="LinkedIn" className="social-icon" />
+            <img width="50px" height="50px" src={images.linkedin} alt="LinkedIn" className="social-icon" />
           </a>
           <a href="https://github.com/AlejandroMilla99" target="_blank" rel="noopener noreferrer">
-            <img src="./resources/git.png" alt="GitHub" className="social-icon" />
+            <img width="50px" height="50px" src={images.git} alt="GitHub" className="social-icon" />
           </a>
         </div>
-        <p>Developed by Alejandro Milla</p>
+        <p>Powered by Alejandro Milla</p>
       </footer>
     </div>
   );
