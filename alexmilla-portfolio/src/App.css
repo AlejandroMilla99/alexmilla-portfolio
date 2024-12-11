@@ -2,6 +2,8 @@
   text-align: center;
   font-family: Arial, sans-serif;
   margin-top: 50px;
+  background: url("./resources/background.gif") no-repeat center center fixed;
+  background-size: cover;
 }
 
 .App-header {
@@ -26,20 +28,27 @@
   background-color: #4db3e5;
 }
 
-.About-me {
-  background-color: #2d3553;
-  color: #dfe6f3;
+.card {
+  background: linear-gradient(to bottom right, #0a0f1a, #000000);
+  color: #ffffff;
   padding: 30px;
   margin: 20px auto;
-  border-radius: 8px;
+  border-radius: 12px;
   width: 80%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.About-me h2 {
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(255, 223, 0, 0.8);
+  border: 1px solid rgba(255, 223, 0, 0.6);
+}
+
+.card h2 {
   color: #61dafb;
 }
 
-.About-me p {
+.card p {
   line-height: 1.6;
 }

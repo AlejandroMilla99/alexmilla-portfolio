@@ -9,7 +9,8 @@ function App() {
         <p>Desarrollador especializado en Swift, Python y JavaScript.</p>
         <a href="#contacto" className="btn">Contáctame</a>
       </header>
-      <section className="About-me">
+
+      <section className="card">
         <h2>Sobre mí</h2>
         <p>
           Soy un desarrollador apasionado por crear soluciones innovadoras y 
@@ -20,6 +21,18 @@ function App() {
         <p>
           Me encanta aprender nuevas tecnologías y enfrentar desafíos que 
           me permitan crecer tanto personal como profesionalmente.
+        </p>
+      </section>
+
+      <section className="card">
+        <h2>Proyectos</h2>
+        <p>
+          Algunos de los proyectos en los que he trabajado incluyen:
+          <ul>
+            <li>Una app móvil para gestión de tareas utilizando Swift.</li>
+            <li>Un sistema web para análisis de datos en Python.</li>
+            <li>Interfaces modernas y responsivas con React.</li>
+          </ul>
         </p>
       </section>
     </div>
