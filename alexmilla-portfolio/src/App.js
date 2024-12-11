@@ -58,6 +58,20 @@ function App() {
           </ul>
         </p>
       </section>
+      <footer className="App-footer">
+        <div className="social-icons">
+          <a href="mailto:alejandromilla99@gmail.com" target="_blank" rel="noopener noreferrer">
+            <img src="./resources/mail.png" alt="Correo" className="social-icon" />
+          </a>
+          <a href="https://www.linkedin.com/in/alejandro-milla-3ba742209/" target="_blank" rel="noopener noreferrer">
+            <img src="./resources/linkedin.png" alt="LinkedIn" className="social-icon" />
+          </a>
+          <a href="https://github.com/AlejandroMilla99" target="_blank" rel="noopener noreferrer">
+            <img src="./resources/git.png" alt="GitHub" className="social-icon" />
+          </a>
+        </div>
+        <p>Developed by Alejandro Milla</p>
+      </footer>
     </div>
   );
 }
