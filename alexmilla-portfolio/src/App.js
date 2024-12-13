@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import HomePage from "./HomePage";
 import ProjectsPage from "./ProjectsPage";
+import CVPage from "./CVPage";
 import images from "./resources/images";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <nav className="header-nav">
             <a href="/" className="nav-item">Inicio</a>
             <a href="/projects" className="nav-item">Proyectos</a>
+            <a href="/cv" className="nav-item">Currículum Vitae</a>
           </nav>
         </header>
 
@@ -25,6 +27,8 @@ function App() {
           <Route path="/alexmilla-portfolio" element={<HomePage />} />
           <Route path="/" element={<HomePage />} />
           <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/cv" element={<CVPage />} />
+
         </Routes>
 
 
