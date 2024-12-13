@@ -22,9 +22,12 @@ function App() {
 
         {/* Rutas dinámicas */}
         <Routes>
-          <Route path="" element={<HomePage />} />
+          <Route path="/alexmilla-portfolio" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/projects" element={<ProjectsPage />} />
         </Routes>
+
+
 
         {/* Footer visible en todas las páginas */}
         <footer className="App-footer">
