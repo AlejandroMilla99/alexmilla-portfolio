@@ -11,6 +11,10 @@ body {
   overflow-x: hidden; /* Evita desbordamiento horizontal */
 }
 
+p {
+  text-align: justify;
+}
+
 .App {
   text-align: center;
   font-family: Arial, sans-serif;
@@ -105,15 +109,17 @@ body {
 .App-footer p {
   font-size: 0.9rem;
   margin: 0;
+  text-align: center;
 }
 
 .card {
   background: linear-gradient(to bottom right, #0a0f1a, #000000);
   color: #ffffff;
   padding: 30px;
+  width: calc(100% - 40px); /* Ajusta para evitar márgenes excesivos en pantallas pequeñas */
+  max-width: 900px; /* Limita el ancho máximo para tarjetas */
   margin: 20px auto;
   border-radius: 12px;
-  width: 80%;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -126,6 +132,7 @@ body {
 
 .card h2 {
   color: #61dafb;
+  margin-bottom: 15px;
 }
 
 .card p {
@@ -163,6 +170,63 @@ body {
 .video-container {
   width: 100%;
   max-width: 700px;
-  margin: 0 35%;
+  margin: 20px auto; /* Centrado sin margen lateral excesivo */
+  justify-content: center;
+  display: flex;
 }
 
+
+.menu-toggle {
+  display: none; /* Oculta el botón por defecto */
+}
+
+
+
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .App-header {
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .header-logo {
+    margin-bottom: 10px;
+  }
+
+  .header-nav {
+    display: none; /* Oculta el menú por defecto */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+    background-color: #0a0f1a;
+    padding: 10px;
+  }
+
+  .header-nav.open {
+    display: flex; /* Muestra el menú cuando esté abierto */
+  }
+
+  .nav-item {
+    width: 100%;
+    text-align: center;
+    padding: 10px 15px;
+  }
+
+  /* Estilo del botón de menú hamburguesa */
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    margin-left: auto;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .menu-toggle:focus {
+    outline: none;
+  }
+}
