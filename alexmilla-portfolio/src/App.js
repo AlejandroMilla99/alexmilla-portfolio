@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import HomePage from "./HomePage";
 import ProjectsPage from "./ProjectsPage";
@@ -19,17 +19,17 @@ function App() {
             <img src={images.logo} alt="Mi Logo" className="logo" />
           </div>
           <nav className={`header-nav ${menuOpen ? "open" : ""}`}>
-            <a href="/" className="nav-item" onClick={() => setMenuOpen(false)}>
+            <a href="#/" className="nav-item" onClick={() => setMenuOpen(false)}>
               Inicio
             </a>
             <a
-              href="/projects"
+              href="#/projects"
               className="nav-item"
               onClick={() => setMenuOpen(false)}
             >
               Proyectos
             </a>
-            <a href="/cv" className="nav-item" onClick={() => setMenuOpen(false)}>
+            <a href="#/cv" className="nav-item" onClick={() => setMenuOpen(false)}>
               Currículum Vitae
             </a>
           </nav>
