@@ -15,6 +15,18 @@ p {
   text-align: justify;
 }
 
+li {
+  line-height: 1.6;
+  font-size: large;
+  margin-bottom: 10px;
+}
+
+a {
+  line-height: 1.6;
+  font-size: large;
+  color: #61dafb;
+}
+
 .App {
   text-align: center;
   font-family: Arial, sans-serif;
@@ -137,6 +149,7 @@ p {
 
 .card p {
   line-height: 1.6;
+  font-size: large;
 }
 
 .btn {
@@ -147,10 +160,13 @@ p {
   border-radius: 4px;
   font-weight: bold;
   transition: background-color 0.3s;
+  font-size: large;
+
 }
 
 .btn:hover {
   background-color: #371fc0;
+  color: white;
 }
 
 .project-detail {
@@ -160,10 +176,39 @@ p {
 
 .project-detail h3 {
   color: #61dafb;
+  align-items: center;
+  display: flex;
+  font-size: x-large ;
+  margin-bottom: 20px;
+}
+.project-detail h4 {
+  color: #61dafb;
+  align-items: center;
+  display: flex;
+  font-size: larger ;
   margin-bottom: 10px;
 }
 
+.cv-detail h4 {
+  color: #61dafb;
+  align-items: center;
+  display: flex;
+  font-size: larger ;
+}
+
+.cv-detail h3 {
+  color: #61dafb;
+  align-items: center;
+  display: flex;
+  font-size: x-large ;
+  margin-bottom: 20px;
+}
+
 .project-detail p {
+  margin-bottom: 20px;
+}
+
+.cv-detail p {
   margin-bottom: 20px;
 }
 
@@ -180,6 +225,164 @@ p {
   display: none; /* Oculta el botón por defecto */
 }
 
+
+.fishbowl {
+  position: relative;
+  width: 80%;
+  height: 500px;
+  overflow: hidden;
+  margin: 40px auto;
+  background: url("./resources/fishbackground3.gif") no-repeat center center;
+  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  border-radius: 20%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.fishbowl-icon {
+  position: absolute;
+  width: 15%;
+  height: 15%;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.1s linear;
+}
+
+.icon-collector {
+  display: flex;
+  position: relative;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.row-doubled {
+  display: flex;
+  position: relative;
+  width: 100%;
+  gap: 7.5%;
+  margin-bottom: 3%;
+}
+
+.icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.languages-chart {
+  margin: 20px auto;
+  max-width: 400px;
+  text-align: center;
+  position: relative; /* Añadido para posicionar los textos del eje Y */
+}
+
+.language-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1; /* Distribuye el espacio uniformemente entre los contenedores */
+  gap: 10px; /* Espaciado entre barra y bandera */
+}
+
+.y-axis {
+  position: absolute;
+  left: -2%;
+  top: 4%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.y-axis span {
+  position: absolute; /* Posicionamiento absoluto relativo al contenedor */
+  left: 0;
+  transform: translateY(50%); /* Centra el texto verticalmente en su posición */
+}
+
+.chart {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between; /* Asegura espaciado uniforme entre idiomas */
+  height: 150px;
+  position: relative;
+}
+
+.bar {
+  position: relative;
+  flex: 1;
+  height: 100%;
+  margin: 0 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bar-fill {
+  position: relative; /* Necesario para posicionar el texto dentro de la barra */
+  width: 100%;
+  background: linear-gradient(90deg, #075f75, #61dafb);
+  border-radius: 5px;
+  transform-origin: top; /* Hace que las barras crezcan desde abajo */
+  display: flex;
+  justify-content: center; /* Centra el texto horizontalmente */
+  align-items: flex-end; /* Sitúa el texto al final de la barra */
+}
+
+.bar-text {
+  font-size: 13px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 5px; /* Espaciado respecto al borde inferior de la barra */
+}
+
+
+
+/* Estilos personalizados para cada nivel */
+.bar-fill.native {
+  height: 100%; /* Español - Nivel Nativo */
+}
+
+.bar-fill.professional {
+  height: 70%; /* Inglés - Nivel Profesional */
+}
+
+.bar-fill.basic {
+  height: 40%; /* Alemán - Nivel Básico */
+}
+
+.flag {
+  width: 50px;
+  height: auto;
+  margin-top: 10px;
+  border: 2px solid white; /* Borde blanco alrededor de la bandera */
+  border-radius: 4px; /* Bordes ligeramente redondeados (opcional) */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra opcional para resaltar */
+}
+
+.flagSpace {
+  width: 33%;
+}
+
+.flagDiv {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.spanCV {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  margin-bottom: 10px;
+}
 
 
 
@@ -228,5 +431,25 @@ p {
 
   .menu-toggle:focus {
     outline: none;
+  }
+
+  .fishbowl {
+    position: relative;
+    width: 100%;
+    height: 240px;
+     overflow: hidden;
+    margin: 40px auto;
+    background:  url("./resources/fishbackground3.gif") no-repeat center center;
+    border-radius: 20%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .fishbowl-icon {
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.1s linear;
   }
 }

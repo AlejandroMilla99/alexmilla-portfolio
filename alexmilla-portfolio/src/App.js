@@ -20,14 +20,14 @@ function App() {
           </div>
           <nav className={`header-nav ${menuOpen ? "open" : ""}`}>
             <a href="#/" className="nav-item" onClick={() => setMenuOpen(false)}>
-              Inicio
+              Home
             </a>
             <a
               href="#/projects"
               className="nav-item"
               onClick={() => setMenuOpen(false)}
             >
-              Proyectos
+              My projects
             </a>
             <a href="#/cv" className="nav-item" onClick={() => setMenuOpen(false)}>
               Currículum Vitae
