@@ -186,7 +186,7 @@ function CVPage() {
         </p>
         <span className="spanCV"><h4>2023 - Now | Deloitte</h4><img src={images.deloitte} alt="Deloitte" className="icon"/></span>
         <p>
-          I have been working full time for Deloitte in several programming projects, focusing in IOS and in Swift apps development. This role made me improve in development of new views, functionalities and correction of incidents in various apps using Swift, SwiftUI and UIKit. I created numerous endpoints in the apps to connect with APIs using technologies such as Swagger. I also got used to dealing with clients daily under organizational issues and in a consulting capacity. Finally I improved my knowledge in version control with SourceTree and Azure, frequent use of pipelines.
+          I have been working full time for Deloitte in several programming projects, focusing in IOS and in Swift apps development. This role made me improve in development of new views, functionalities and correction of incidents in various apps using Swift, SwiftUI and UIKit. I created numerous endpoints in the apps to connect with APIs using technologies such as Swagger. I also got used to dealing with clients daily under organizational issues and in a consulting capacity. Finally I improved my knowledge in version control with SourceTree and Azure, as well as in pipelines usage.
         </p>
       </section>
 

@@ -8,7 +8,7 @@ html,
 body {
   width: 100%;
   height: 100%;
-  overflow-x: hidden; /* Evita desbordamiento horizontal */
+  scroll-behavior: auto;
 }
 
 p {
@@ -36,6 +36,7 @@ a {
   flex-direction: column;
   min-height: 100vh; /* Asegura que la App ocupe toda la altura de la pantalla */
   width: 100%;
+  overflow: auto;
 }
 
 .App-header {
@@ -124,15 +125,236 @@ a {
   text-align: center;
 }
 
+.spanRainbow {
+  position: absolute;
+  border-radius: 100vmax;
+}
+
+.rowRainbow {
+  display: flex;
+  position: relative;
+  gap: 5%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 4%;
+  margin-top: 4%;
+}
+
+.cardRainbow {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  color: #fff;
+  background: linear-gradient(to bottom, #060027, #000000);
+  overflow: hidden;
+  border-top: 1px solid rgba(0, 17, 255, 0.5); /* Azul eléctrico */
+  border-left: 1px solid rgba(0, 89, 255, 0.5); /* Azul brillante */
+  border-bottom: 1px solid rgba(0, 183, 255, 0.5); /* Azul claro */
+  border-right: 1px solid rgba(0, 255, 255, 0.5); /* Turquesa */
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+  border-radius: 5%;
+  transition: all 1s;
+  font-size: 18px;
+  margin-bottom: 4%;
+}
+
+.cardRainbow:hover {
+  transform: translateY(-10px);
+  box-shadow:0 8px 20px rgb(0, 183, 255);
+  border: 1px solid #371fc0;
+}
+
+.cardRainbow:hover .hover-btn {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.6s all;
+}
+
+.cardRainbow:hover h3,
+.cardRainbow:hover img,
+.cardRainbow:hover p {
+  filter: blur(5px);
+  transition: filter 1s ease;
+}
+
+.cardRainbow:hover .top,
+.cardRainbow:hover .bottom,
+.cardRainbow:hover .left,
+.cardRainbow:hover .right {
+height: 0px;
+background: transparent;
+}
+
+.hover-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  background-color: #61dafb;
+  color: #1a2238;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease, visibility 1s ease;
+}
+
+.hover-btn:hover {
+  background-color: #371fc0;
+  color: #ffffff;
+}
+
+.top {
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 5px;
+  background: linear-gradient(
+    90deg,
+    transparent 50%,
+    rgba(0, 17, 255, 0.5), /* Azul eléctrico */
+    rgb(0, 17, 255) /* Azul eléctrico sólido */
+  );
+}
+
+.bottom {
+  right: 0;
+  bottom: 0;
+  height: 5px;
+  background: linear-gradient(
+    90deg,
+    rgb(0, 183, 255), /* Azul claro */
+    rgba(0, 183, 255, 0.5), /* Azul claro translúcido */
+    transparent 50%
+  );
+}
+
+.right {
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 30%,
+    rgba(0, 255, 255, 0.5), /* Turquesa translúcido */
+    rgb(0, 255, 255) /* Turquesa sólido */
+  );
+}
+
+.left {
+  left: 0;
+  bottom: 0;
+  width: 5px;
+  height: 0;
+  border-radius: 50%;
+  background: linear-gradient(
+    180deg,
+    rgb(0, 89, 255), /* Azul brillante */
+    rgba(0, 89, 255, 0.5), /* Azul brillante translúcido */
+    transparent 70%
+  );
+}
+
+
+.top {
+  animation: animateTop 5s ease-in-out infinite;
+}
+
+.bottom {
+  animation: animateBottom 5s ease-in-out infinite;
+}
+
+.right {
+  animation: animateRight 5s ease-in-out infinite;
+}
+
+.left {
+  animation: animateLeft 5s ease-in-out infinite;
+}
+
+@keyframes animateTop {
+  25% {
+    width: 100%;
+    opacity: 1;
+  }
+
+  30%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes animateBottom {
+  0%,
+  50% {
+    opacity: 0;
+    width: 0;
+  }
+
+  75% {
+    opacity: 1;
+    width: 100%;
+  }
+
+  76%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes animateRight {
+  0%,
+  25% {
+    opacity: 0;
+    height: 0;
+  }
+
+  50% {
+    opacity: 1;
+    height: 100%;
+  }
+
+  55%,
+  100% {
+    height: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes animateLeft {
+  0%,
+  75% {
+    opacity: 0;
+    bottom: 0;
+    height: 0;
+  }
+
+  100% {
+    opacity: 1;
+    height: 100%;
+  }
+}
+
+
 .card {
-  background: linear-gradient(to bottom right, #0a0f1a, #000000);
+  background: linear-gradient(to bottom, #060027, #000000);
   color: #ffffff;
   padding: 30px;
   width: calc(100% - 40px); /* Ajusta para evitar márgenes excesivos en pantallas pequeñas */
   max-width: 900px; /* Limita el ancho máximo para tarjetas */
   margin: 20px auto;
   border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 6px 15px rgba(6, 0, 41, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -172,6 +394,13 @@ a {
 .project-detail {
   margin-top: 30px;
   text-align: left;
+}
+
+.cardRainbow h3 {
+  color: #61dafb;
+  align-items: center;
+  display: flex;
+  font-size: x-large ;
 }
 
 .project-detail h3 {
@@ -271,6 +500,22 @@ a {
   height: 50px;
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.iconHome {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.iconMe {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(76, 174, 255, 0.63);
+  margin-bottom: 20px;
 }
 
 .languages-chart {

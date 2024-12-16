@@ -1,6 +1,7 @@
 // src/resources/images.js
 const images = {
-    logo: require("./logo.jpeg"),
+    logo: require("./logo.png"),
+    home: require("./home.jpeg"),
     mail: require("./email.png"),
     linkedin: require("./linkedin.png"),
     git: require("./git.png"),
@@ -24,6 +25,8 @@ const images = {
     germany: require("./germany.png"),
     livemed: require("./livemed.png"),
     deloitte: require("./deloitte.png"),
+    rocket: require("./rocket.png"),
+    cv: require("./cv.png"),
   };
   
   export default images;

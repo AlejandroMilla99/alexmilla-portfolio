@@ -1,11 +1,11 @@
-import React from "react";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import React, { useState } from "react";
+import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 import HomePage from "./HomePage";
 import ProjectsPage from "./ProjectsPage";
 import CVPage from "./CVPage";
 import images from "./resources/images";
-import { useState } from "react";
+import ScrollToTop from './ScrollToTop';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,25 +13,28 @@ function App() {
   return (
     <div className="App">
       <Router>
+        {/* Este componente debe ir justo después del Router */}
+        <ScrollToTop />
+
         {/* Header visible en todas las páginas */}
         <header className="App-header">
           <div className="header-logo">
             <img src={images.logo} alt="Mi Logo" className="logo" />
           </div>
           <nav className={`header-nav ${menuOpen ? "open" : ""}`}>
-            <a href="#/" className="nav-item" onClick={() => setMenuOpen(false)}>
+            <Link to="/" className="nav-item" onClick={() => setMenuOpen(false)}>
               Home
-            </a>
-            <a
-              href="#/projects"
+            </Link>
+            <Link
+              to="/projects"
               className="nav-item"
               onClick={() => setMenuOpen(false)}
             >
               My projects
-            </a>
-            <a href="#/cv" className="nav-item" onClick={() => setMenuOpen(false)}>
+            </Link>
+            <Link to="/cv" className="nav-item" onClick={() => setMenuOpen(false)}>
               Currículum Vitae
-            </a>
+            </Link>
           </nav>
           <button
             className="menu-toggle"
@@ -43,7 +46,6 @@ function App() {
 
         {/* Rutas dinámicas */}
         <Routes>
-          <Route path="/alexmilla-portfolio" element={<HomePage />} />
           <Route path="/" element={<HomePage />} />
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/cv" element={<CVPage />} />
@@ -98,5 +100,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
