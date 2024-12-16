@@ -612,15 +612,22 @@ background: transparent;
 .flagLang {
   width: 50px;
   height: 30px;
-  margin-top: 10px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra opcional para resaltar */
-  transition: all 0.6s;
+  margin: 0 3px;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+
+.activeFlag {
+  filter: none; /* La bandera activa conserva su color */
+}
+
+.inactiveFlag {
+  filter: grayscale(100%); /* La bandera inactiva se vuelve blanco y negro */
+  opacity: 0.6; /* Opcional: hace que parezca desactivada */
 }
 
 .flagLang:hover {
-  box-shadow: 0 4px 10px #a8a5065b;
-  border: 1px solid #a8a5065b;
-  cursor: pointer;
+  filter: brightness(1.2); /* Resalta las banderas al pasar el ratón */
 }
 
 .flagSpace {

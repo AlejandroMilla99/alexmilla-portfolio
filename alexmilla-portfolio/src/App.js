@@ -12,10 +12,12 @@ import ScrollToTop from './ScrollToTop';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [selectedLang, setSelectedLang] = useState("es"); // Estado para idioma seleccionado
   const { t, i18n } = useTranslation(); // Hook para traducción
 
   // Cambiar idioma
   const changeLanguage = (lang) => {
+    setSelectedLang(lang); // Actualiza el idioma seleccionado
     i18n.changeLanguage(lang);
   };
 
@@ -29,15 +31,27 @@ function App() {
           <div className="header-logo">
             <img src={images.logo} alt="Mi Logo" className="logo" />
           </div>
-              <img src={images.spain} alt="English" className="flagLang" onClick={() => changeLanguage("es")} />
-              <img src={images.uk} alt="English" className="flagLang" onClick={() => changeLanguage("en")}/>
+              {/* Bandera de España */}
+              <img
+                src={images.spain}
+                alt="Español"
+                className={`flagLang ${selectedLang === "es" ? "activeFlag" : "inactiveFlag"}`}
+                onClick={() => changeLanguage("es")}
+              />
+              {/* Bandera de UK */}
+              <img
+                src={images.uk}
+                alt="English"
+                className={`flagLang ${selectedLang === "en" ? "activeFlag" : "inactiveFlag"}`}
+                onClick={() => changeLanguage("en")}
+              />
 
               <button
-            className="menu-toggle"
-            onClick={() => setMenuOpen((prev) => !prev)}
-          >
-            ☰
-          </button>
+                className="menu-toggle"
+                onClick={() => setMenuOpen((prev) => !prev)}
+              >
+                ☰
+              </button>
         </span>
           
         <div className={`header-nav ${menuOpen ? "open" : ""}`}>
@@ -45,7 +59,7 @@ function App() {
               {t('header.home')}
           </Link>
           <Link
-              to ="/projects"
+              to="/projects"
               className="nav-item"
               onClick={() => setMenuOpen(false)}
             >
