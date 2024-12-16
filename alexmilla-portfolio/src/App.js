@@ -67,7 +67,48 @@ function App() {
 
         {/* Footer visible en todas las páginas */}
         <footer className="App-footer">
-          <p>{t('footer.poweredBy')}</p>
+          <div className="social-icons">
+            <a
+              href="mailto:alejandromilla99@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                width="50px"
+                height="50px"
+                src={images.mail}
+                alt="Correo"
+                className="social-icon"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/alejandro-milla-3ba742209/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                width="50px"
+                height="50px"
+                src={images.linkedin}
+                alt="LinkedIn"
+                className="social-icon"
+              />
+            </a>
+            <a
+              href="https://github.com/AlejandroMilla99"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                width="50px"
+                height="50px"
+                src={images.git}
+                alt="GitHub"
+                className="social-icon"
+              />
+            </a>
+          </div>
+          <p>Powered by Alejandro Milla</p>
         </footer>
       </Router>
     </div>
