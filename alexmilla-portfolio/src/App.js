@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 import HomePage from "./HomePage";
 import ProjectsPage from "./ProjectsPage";
@@ -8,6 +8,7 @@ import images from "./resources/images";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import './i18n';
+import ScrollToTop from './ScrollToTop';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,6 +22,7 @@ function App() {
   return (
     <div className="App">
       <Router>
+      <ScrollToTop />
         {/* Header visible en todas las páginas */}
         <header className="App-header">
         <span className="spanLang">
@@ -38,20 +40,20 @@ function App() {
           </button>
         </span>
           
-          <div className={`header-nav ${menuOpen ? "open" : ""}`}>
-            <a href="#/" className="nav-item" onClick={() => setMenuOpen(false)}>
+        <div className={`header-nav ${menuOpen ? "open" : ""}`}>
+          <Link to="/" className="nav-item" onClick={() => setMenuOpen(false)}>
               {t('header.home')}
-            </a>
-            <a
-              href="#/projects"
+          </Link>
+          <Link
+              to ="/projects"
               className="nav-item"
               onClick={() => setMenuOpen(false)}
             >
               {t('header.projects')}
-            </a>
-            <a href="#/cv" className="nav-item" onClick={() => setMenuOpen(false)}>
+          </Link>
+          <Link to="/cv" className="nav-item" onClick={() => setMenuOpen(false)}>
               {t('header.cv')}
-            </a>
+          </Link>
         </div>
         </header>
 

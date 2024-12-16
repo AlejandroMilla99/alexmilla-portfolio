@@ -1,7 +1,7 @@
 import React from "react";
 import images from "./resources/images";
 import { useTranslation } from "react-i18next";
-
+import { Link } from "react-router-dom";
 
 function HomePage() {
   const { t } = useTranslation();
@@ -23,7 +23,7 @@ function HomePage() {
             <p>
               I have developed some personal projects that have made me learn about new programming languages ​​and frameworks, know about some of them here.
             </p>
-            <a href="#/projects" className="hover-btn">Know More</a>
+            <Link to="/projects" className="hover-btn">Know More</Link>
             <span className="spanRainbow top"></span>
             <span className="spanRainbow right"></span>
             <span className="spanRainbow bottom"></span>
@@ -35,7 +35,7 @@ function HomePage() {
             <p>
               If you are interested in knowing more about the technologies I use, my work experience or my certificates, this is your section.
             </p>
-            <a href="#/cv" className="hover-btn">Know More</a>
+            <Link to="/cv" className="hover-btn">Know More</Link>
             <span className="spanRainbow top"></span>
             <span className="spanRainbow right"></span>
             <span className="spanRainbow bottom"></span>
