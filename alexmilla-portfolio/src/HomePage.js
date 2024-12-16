@@ -1,11 +1,15 @@
 import React from "react";
 import images from "./resources/images";
+import { useTranslation } from "react-i18next";
+
 
 function HomePage() {
+  const { t } = useTranslation();
+
   return (
     <div>
       <section className="card" id="inicio">
-        <h2>Sobre mí</h2>
+        <h2>{t('homepage.title')}</h2>
         <img src={images.home} alt="Mi Logo" className="iconMe" />
         <p>
         I am Alejandro Milla Ramírez, I was born in Málaga and since I was little I have been interested in the world of computers and the Internet, making them part of my hobbies. That is why, later, I decided to study a double degree in Computer Engineering and Business Management at Universidad Complutense in Madrid. During my degree I realized that programming aroused great interest in me, leading me to research new technologies to create attractive and efficient solutions. With experience in mobile and web application development, I specialize in building intuitive and functional interfaces using modern technologies such as React, Swift and Python, with which I currently develop my work life.

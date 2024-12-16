@@ -1,0 +1,23 @@
+{
+    "header": {
+      "home": "Inicio",
+      "projects": "Mis Proyectos",
+      "cv": "Currículum Vitae"
+    },
+    "footer": {
+      "poweredBy": "Desarrollado por Alejandro Milla"
+    },
+    "homepage": {
+      "welcome": "¡Bienvenido a mi portafolio!",
+      "title": "Sobre mi"
+    },
+    "projectsPage": {
+      "title": "Mis Proyectos",
+      "description": "Aquí están algunos de los proyectos en los que he trabajado."
+    },
+    "cvPage": {
+      "title": "Currículum Vitae",
+      "description": "Consulta mi CV para más detalles sobre mi carrera."
+    }
+  }
+  
