@@ -63,8 +63,6 @@ a {
 
 .header-logo:hover .logo {
   transform: rotateY(720deg);
-  box-shadow: 0 6px 16px #371fc0;
-  border: 1px solid #371fc0;
 }
 
 .header-nav {

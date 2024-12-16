@@ -9,15 +9,49 @@
     },
     "homepage": {
       "welcome": "¡Bienvenido a mi portafolio!",
-      "title": "Sobre mi"
+      "title": "Sobre mi",
+      "description": "Soy Alejandro Milla Ramírez, nací en Málaga y desde pequeño me ha interesado el mundo de la informática e Internet, haciéndolos parte de mis aficiones. Por eso, posteriormente, decidí estudiar el doble grado de Ingeniería Informática y ADE en la Universidad Complutense de Madrid. Durante la carrera me di cuenta de que la programación despertaba en mí un gran interés, llevándome a investigar nuevas tecnologías para crear soluciones intuitivas y eficientes. Con experiencia en desarrollo de aplicaciones móviles y web, me especializo en la construcción de interfaces atractivas y funcionales utilizando tecnologías modernas como React, Swift y Python, con las que actualmente desarrollo mi vida laboral.",
+      "projectsDescription": "He desarrollado algunos proyectos personales que me han hecho aprender sobre nuevos lenguajes y frameworks de programación, conoce algunos de ellos aquí.",
+      "cvDescription": "Si estás interesado en saber más sobre las tecnologías que uso, mi experiencia laboral y académica o mis certificados, esta es tu sección.",
+      "know": "Saber más"
     },
     "projectsPage": {
       "title": "Mis Proyectos",
-      "description": "Aquí están algunos de los proyectos en los que he trabajado."
+      "description": "A parte de esta web usando React, esta sección recopila algunos de los proyectos en los que he estado trabajando durante estos años en los que he ido desarrollando mi interés por la programación y el aprendizaje de nuevas tecnologías.",
+      "calculatorTitle": "Calculadora de riesgo con Machine Learning para pacientes oncológicos",
+      "calculatorDescription": "Proyecto final realizado para Ingeniería Informática. Con una base de datos MySQL que recopila características de hasta 300 pacientes, incorpora un modelo de aprendizaje automático que predice la supervivencia a la enfermedad que padecían. Es un sitio web construida a partir de Python, PHP, JavaScript y HTML.",
+      "sorareTitle": "Máquina de datos para NBA Sorare",
+      "sorareDescription": "Web con endpoint de conexión con la API de Sorare NBA desde donde se recopilan todos los jugadores en la base de datos. Mediante webscrapping se obtienen otras características extra de estos jugadores. Esta web incluye funcionalidades como una tabla que permite filtrar por características de los diferentes jugadores, un constructor de equipos y un recomendador de alineaciones óptimas según los puntos esperados para la jornada actual. Fue desarrollado utilizando Python y JavaScript como tecnologías principales.",
+      "fantasyTitle": "Máquina de datos para LaLiga Fantasy",
+      "fantasyDescription": "Web con endpoint de conexión con LaLiga Fantasy API desde el cual se recopilan todos los jugadores en la base de datos. Fue un proyecto inicial que supuso la plantilla del proyecto anterior, recogiendo la estructura y algunas funcionalidades básicas. Fue desarrollado utilizando Python y JavaScript como tecnologías principales.",
+      "datingTitle": "HeatMill app de citas",
+      "datingDescription": "Aplicación de citas que implementa un algoritmo de relación basado en preguntas físicas y de personalidad al usuario. Utiliza una base de datos Firebase que maneja chats entre usuarios, perfil modificable y, próximamente, autenticación de usuarios. Está basado en la tecnología de Flutter."
     },
     "cvPage": {
       "title": "Currículum Vitae",
-      "description": "Consulta mi CV para más detalles sobre mi carrera."
+      "description": "Aquí puedes encontrar mi Curriculum Vitae actualizado como desarrollador, si es de interés puedes visualizarlo para conocer más sobre mis habilidades, experiencia y proyectos.",
+      "get": "Ver CV",
+      "certificates": "Certificados",
+
+      "workTitle": "Experiencia laboral",
+      "workIntro": "Esta sección destaca mi trayectoria profesional como desarrollador. Se presentan los roles que he desempeñado, los proyectos a los que he contribuido y el impacto que he tenido en varias organizaciones.",
+      "workLivemedDescription": "En mis prácticas extracurriculares para la universidad trabajé durante medio año como desarrollador full-stack para esta empresa. Traté con grandes bases de datos en CRM basado en Odoo conectando estos datos con el sitio web de LiveMed creado con Python, JavaScript y el framework de Django. También agregué nuevas funcionalidades como publicidad a través del programa de afiliación de Amazon, recolección de cookies, etc. Finalmente trabajé con Android Studio y Eclipse para actualizar la aplicación LiveMed a API 30.",
+      "workDeloitteTitle": "2023 - Actualidad | Deloitte",
+      "workDeloitteDescription": "Actualmente me encuentro trabajando a tiempo completo para Deloitte en varios proyectos de programación, enfocándome en IOS y en el desarrollo de aplicaciones Swift. Este rol me hizo mejorar en el desarrollo de nuevas vistas, funcionalidades y corrección de incidencias en diversas apps usando Swift, SwiftUI y UIKit. Creé diversos endpoints de conexión con APIs en las aplicaciones utilizando tecnologías como Swagger. También me acostumbré a tratar con clientes a diario en cuestiones organizativas y en calidad de consultor. Finalmente mejoré mis conocimientos en control de versiones con SourceTree y Azure, así como en el uso de pipelines.",
+
+      "techTitle": "Tecnologías",
+      "techIntro": "Esta es una descripción general de las tecnologías y herramientas que he manejado a lo largo de mi vida como desarrollador. Desde lenguajes de programación hasta frameworks, bibliotecas y entornos de desarrollo.",
+      "techProfessionalTitle": "Experiencia profesional",
+      "techProfessionalDescription": "Algunas de las tecnologías en las que he puesto mi foco de manera destacable: Swift, SwiftUI, UIKit, Python, JavaScript, MySQL, HTML, CSS, Git, Azure DevOps, Firebase.",
+      "techCasualTitle": "Aprendizaje casual",
+      "techCasualDescription": "También he aprendido otras tecnologías que me han resultado de interés para la creación de proyectos personales: Flutter, node.js, React, Java, PHP, C++, Swagger.",
+
+      "flutterCert": "Flutter Certified Application Developer (en proceso...)",
+      "languagesTitle": "Idiomas",
+      "languagesDescription": "A continuación puedes ver mi nivel en los diferentes idiomas que hablo:",
+      "basic": "Básico",
+      "professional": "Profesional",
+      "native": "Nativo"
     }
   }
   

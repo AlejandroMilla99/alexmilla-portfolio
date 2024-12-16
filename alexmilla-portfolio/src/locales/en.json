@@ -9,15 +9,49 @@
     },
     "homepage": {
       "welcome": "Welcome to my portfolio!",
-      "title": "About me"
+      "title": "About me",
+      "description": "I am Alejandro Milla Ramírez, I was born in Málaga and since I was little I have been interested in the world of computers and the Internet, making them part of my hobbies. That is why, later, I decided to study a double degree in Computer Engineering and Business Management at Universidad Complutense in Madrid. During my degree I realized that programming aroused great interest in me, leading me to research new technologies to create intuitive and efficient solutions. With experience in mobile and web application development, I specialize in building attractive and functional interfaces using modern technologies such as React, Swift and Python, with which I currently develop my work life.",
+      "projectsDescription": "I have developed some personal projects that have made me learn about new programming languages ​​and frameworks, know about some of them here.",
+      "cvDescription": "If you are interested in knowing more about the technologies I use, my work and academic experience or my certificates, this is your section.",
+      "know": "Know more"
     },
     "projectsPage": {
       "title": "My Projects",
-      "description": "Here are some of the projects I've worked on."
+      "description": "Apart from this website using React, this section compiles some of the projects that I have been working on during these years in which I have been developing my interest in programming and learning new technologies.",
+      "calculatorTitle": "Machine Learning risk calculator for cancer patients",
+      "calculatorDescription": "Final project made for Computer Engineering. With a MySQL database that compiles characteristics of up to 300 patients, it incorporates a machine learning model that predict survival from the disease they suffered from. It is a website based on Python, PHP, JavaScript and HTML.",
+      "sorareTitle": "NBA Sorare Data Machine",
+      "sorareDescription": "It is a website that has a connection endpoint with the Sorare NBA API from which all the players in the database are collected. Using webscrapping, other characteristics of these players are obtained. This website includes functionalities such as a table that allows filtering by characteristics of the different players, a team builder and a recommender of optimal lineups according to the expected points for the current matchday. It was developed using Python and JavaScript as main technologies.",
+      "fantasyTitle": "LaLiga Fantasy Data Machine",
+      "fantasyDescription": "This website that has a connection endpoint with LaLiga Fantasy API from which every player in the database is collected. It is a template of the previous project, gathering the structure and some basic functionalities. It was developed using Python and JavaScript as main technologies.",
+      "datingTitle": "HeatMill Dating App",
+      "datingDescription": "Dating app that implements a relationship algorithm based on physical and personality questions to the user. It uses a Firebase database that handles chats between users, modifiable profile and future authentication. It is based on Flutter technology."
     },
     "cvPage": {
       "title": "Curriculum Vitae",
-      "description": "Check out my CV for more details about my career."
+      "description": "Here you can find my up-to-date Curriculum Vitae as a developer, feel free to download it to learn more about my skills, experience, and projects.",
+      "get": "Get CV",
+      "certificates": "Certificates",
+
+      "workTitle": "Working experience",
+      "workIntro": "This section highlights my professional journey as a developer. Explore the roles I’ve held, the projects I’ve contributed to, and the impact I’ve made across various organizations.",
+      "workLivemedDescription": "In my extracurricular practice for university I worked for half a year as a full-stack developer for this company. I dealed with huge databases in their Odoo CRM connecting this data with LiveMed website built using Python, JavaScript and Django framework. I also added new functionalities such as advertisement through Amazon affiliation programme, cookies collection and so on. Finally I worked with Android Studio and Eclipse in order to update LiveMed app to API 30.",
+      "workDeloitteTitle": "2023 - Now | Deloitte",
+      "workDeloitteDescription": "I have been working full time for Deloitte in several programming projects, focusing in IOS and in Swift apps development. This role made me improve in development of new views, functionalities and correction of incidents in various apps using Swift, SwiftUI and UIKit. I created numerous endpoints in the apps to connect with APIs using technologies such as Swagger. I also got used to dealing with clients daily under organizational issues and in a consulting capacity. Finally I improved my knowledge in version control with SourceTree and Azure, as well as in pipelines usage.",
+
+      "techTitle": "Technologies",
+      "techIntro": "This is an overview of the technologies and tools I’ve mastered throughout my career as a developer. From programming languages to frameworks, libraries, and development environments.",
+      "techProfessionalTitle": "Professional experience",
+      "techProfessionalDescription": "Some of the technologies that I have been focusing on: Swift, SwiftUI, UIKit, Python, JavaScript, MySQL, HTML, CSS, Git, Azure DevOps, Firebase.",
+      "techCasualTitle": "Casual learning",
+      "techCasualDescription": "I have also learned other technologies that have been of interest to me for personal projects: Flutter, node.js, React, Java, PHP, C++, Swagger.",
+
+      "flutterCert": "Flutter Certified Application Developer (in process...)",
+      "languagesTitle": "Languages",
+      "languagesDescription": "Below you can see my proficiency levels for different languages:",
+      "basic": "Basic",
+      "professional": "Professional",
+      "native": "Native"
     }
   }
   

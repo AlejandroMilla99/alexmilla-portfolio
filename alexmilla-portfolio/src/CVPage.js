@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import images from "./resources/images";
+import { useTranslation } from "react-i18next";
 
 const icons = [images.android, images.azure, images.cplus, images.eclipse, images.flutter, images.git, images.java, images.js, images.mysql, images.php, images.python, images.react, images.swagger, images.swift, images.firebase, images.node]; // Iconos disponibles
 const ICON_SIZE = 10; // Tamaño aproximado del ícono en porcentaje
@@ -68,6 +69,8 @@ function Fishbowl() {
 }
 
 function LanguagesChart() {
+  const { t } = useTranslation();
+
   const [barsVisible, setBarsVisible] = useState(false); // Controla si las barras se muestran
   const chartRef = useRef(null); // Referencia al contenedor del gráfico
 
@@ -106,7 +109,7 @@ function LanguagesChart() {
               transition: "height 1s ease-in-out",
             }}
           >
-            <span className="bar-text">Native</span>
+            <span className="bar-text">{t('cvPage.native')}</span>
           </div>
         </div>
 
@@ -119,7 +122,7 @@ function LanguagesChart() {
               transition: "height 1s ease-in-out",
             }}
           >
-            <span className="bar-text">Professional</span>
+            <span className="bar-text">{t('cvPage.professional')}</span>
           </div>
         </div>
 
@@ -132,7 +135,7 @@ function LanguagesChart() {
               transition: "height 1s ease-in-out",
             }}
           >
-            <span className="bar-text">Basic</span>
+            <span className="bar-text">{t('cvPage.basic')}</span>
           </div>
         </div>
       </div>
@@ -156,12 +159,14 @@ function LanguagesChart() {
 
 
 function CVPage() {
+  const { t } = useTranslation();
+
   return (
     <div>
       <section className="card" id="cv">
-        <h2>Curriculum Vitae</h2>
+        <h2>{t('header.cv')}</h2>
         <p>
-        Here you can find my up-to-date Curriculum Vitae as a developer, feel free to download it to learn more about my skills, experience, and projects.
+          {t('cvPage.description')}
         </p>
         <div style={{ textAlign: "center", marginTop: "20px" }}>
           <a
@@ -170,46 +175,45 @@ function CVPage() {
             rel="noopener noreferrer"
             className="btn"
           >
-            Get my CV
+            {t('cvPage.get')}
           </a>
         </div>
       </section>
 
       <section className="card cv-detail" id="cv2">
-        <h3>Working Experience</h3>
+        <h3>{t('cvPage.workTitle')}</h3>
         <p>
-        This section highlights my professional journey as a developer. Explore the roles I’ve held, the projects I’ve contributed to, and the impact I’ve made across various organizations.
+        {t('cvPage.workIntro')}
         </p>
         <span className="spanCV"><h4>2023 | LiveMed Iberia</h4><img src={images.livemed} alt="LiveMed Iberia" className="icon"/></span>
         <p>
-          In my extracurricular practice for university I worked for half a year as a full-stack developer for this company. I dealed with huge databases in their Odoo CRM connecting this data with LiveMed website built using Python, JavaScript and Django framework. I also added new functionalities such as advertisement through Amazon affiliation programme, cookies collection and so on. Finally I worked with Android Studio and Eclipse in order to update LiveMedd app to API 30.
+        {t('cvPage.workLivemedDescription')}
         </p>
-        <span className="spanCV"><h4>2023 - Now | Deloitte</h4><img src={images.deloitte} alt="Deloitte" className="icon"/></span>
+        <span className="spanCV"><h4>{t('cvPage.workDeloitteTitle')}</h4><img src={images.deloitte} alt="Deloitte" className="icon"/></span>
         <p>
-          I have been working full time for Deloitte in several programming projects, focusing in IOS and in Swift apps development. This role made me improve in development of new views, functionalities and correction of incidents in various apps using Swift, SwiftUI and UIKit. I created numerous endpoints in the apps to connect with APIs using technologies such as Swagger. I also got used to dealing with clients daily under organizational issues and in a consulting capacity. Finally I improved my knowledge in version control with SourceTree and Azure, as well as in pipelines usage.
+        {t('cvPage.workDeloitteDescription')}
         </p>
       </section>
 
       <section className="card project-detail" id="cv3">
-        <h3>Technologies</h3>
+        <h3>{t('cvPage.techTitle')}</h3>
         <p>
-        This is an overview of the technologies and tools I’ve mastered throughout my career as a developer. From programming languages to frameworks, libraries, and development environments.
-        </p>
-        <h4>Professional experience</h4>
+        {t('cvPage.techIntro')}        </p>
+        <h4>{t('cvPage.techProfessionalTitle')}</h4>
         <p>
-          Some of the technologies that I have been focusing on: Swift, SwiftUI, UIKit, Python, JavaScript, MySQL, HTML, CSS, Git, Azure DevOps, Firebase.
+        {t('cvPage.techProfessionalDescription')}
         </p>
 
-        <h4>Casual learning</h4>  
+        <h4>{t('cvPage.techCasualTitle')}</h4>  
         <p>
-        I have also learned other technologies that have been of interest to me for personal projects: Flutter, node.js, React, Java, PHP, C++, Swagger.  
+        {t('cvPage.techCasualDescription')}  
         </p>
         {/* Componente de la pecera */}
         <Fishbowl />
       </section>
 
       <section className="card project-detail" id="cv4">
-        <h3>Certificates</h3>
+        <h3>{t('cvPage.certificates')}</h3>
         <ul>
           <li>
             <a href={process.env.PUBLIC_URL + '/resources/C1.pdf'} target="_blank" rel="noopener noreferrer">Certificate in advanced English CAE (C1)</a>
@@ -224,14 +228,14 @@ function CVPage() {
             <a href={process.env.PUBLIC_URL + '/resources/FDMcert.pdf'} target="_blank" rel="noopener noreferrer">Digital Marketing Google certificate</a>
           </li>
           <li>
-            Flutter Certified Application Developer (in process...)
+            {t('cvPage.flutterCert')}
           </li>
         </ul>
       </section>
 
       <section className="card project-detail" id="cv5">
-        <h3>Languages</h3>
-        <p>Below you can see my proficiency levels for different languages:</p>
+        <h3>{t('cvPage.languagesTitle')}</h3>
+        <p>{t('cvPage.languagesDescription')}</p>
         <LanguagesChart />
       </section>
     </div>

@@ -108,7 +108,7 @@ function App() {
               />
             </a>
           </div>
-          <p>Powered by Alejandro Milla</p>
+          <p>{t('footer.poweredBy')}</p>
         </footer>
       </Router>
     </div>
