@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/alexmilla-portfolio/static/css/main.e707df7e.css",
-    "main.js": "/alexmilla-portfolio/static/js/main.4f1130a2.js",
+    "main.css": "/alexmilla-portfolio/static/css/main.dd694e41.css",
+    "main.js": "/alexmilla-portfolio/static/js/main.d37151fa.js",
     "static/js/488.f680d99c.chunk.js": "/alexmilla-portfolio/static/js/488.f680d99c.chunk.js",
     "static/media/fishbackground3.gif": "/alexmilla-portfolio/static/media/fishbackground3.1b8fa30fd0ca4baf600c.gif",
     "static/media/background.gif": "/alexmilla-portfolio/static/media/background.86295f2608a2a2298b7b.gif",
     "static/media/rocket.png": "/alexmilla-portfolio/static/media/rocket.90a37a3cdf410988c855.png",
     "static/media/logo.png": "/alexmilla-portfolio/static/media/logo.5f9ed07239706b2ae183.png",
     "static/media/php.png": "/alexmilla-portfolio/static/media/php.1f32f22bff6c373c52fc.png",
-    "static/media/home.jpeg": "/alexmilla-portfolio/static/media/home.a3303de5fbba50f5369e.jpeg",
+    "static/media/me.jpeg": "/alexmilla-portfolio/static/media/me.a3303de5fbba50f5369e.jpeg",
     "static/media/cplus.png": "/alexmilla-portfolio/static/media/cplus.904c659a2c4e76605892.png",
     "static/media/spain.webp": "/alexmilla-portfolio/static/media/spain.25e07117a54b007be15d.webp",
     "static/media/mysql.jpg": "/alexmilla-portfolio/static/media/mysql.91847edbe06dae703d0f.jpg",
+    "static/media/home.png": "/alexmilla-portfolio/static/media/home.7b7129bfc95a2530e00c.png",
     "static/media/azure.png": "/alexmilla-portfolio/static/media/azure.3862ad09f30250e4211d.png",
     "static/media/linkedin.png": "/alexmilla-portfolio/static/media/linkedin.d60fed426f40cb49d718.png",
     "static/media/flutter.jpg": "/alexmilla-portfolio/static/media/flutter.e772b39b5a4b7ddcc0aa.jpg",
@@ -26,12 +27,12 @@
     "static/media/swagger.png": "/alexmilla-portfolio/static/media/swagger.afd1bfb8320b5e8ca2ce.png",
     "static/media/python.webp": "/alexmilla-portfolio/static/media/python.ce1a59960fcaf8d8dfe1.webp",
     "index.html": "/alexmilla-portfolio/index.html",
-    "main.e707df7e.css.map": "/alexmilla-portfolio/static/css/main.e707df7e.css.map",
-    "main.4f1130a2.js.map": "/alexmilla-portfolio/static/js/main.4f1130a2.js.map",
+    "main.dd694e41.css.map": "/alexmilla-portfolio/static/css/main.dd694e41.css.map",
+    "main.d37151fa.js.map": "/alexmilla-portfolio/static/js/main.d37151fa.js.map",
     "488.f680d99c.chunk.js.map": "/alexmilla-portfolio/static/js/488.f680d99c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e707df7e.css",
-    "static/js/main.4f1130a2.js"
+    "static/css/main.dd694e41.css",
+    "static/js/main.d37151fa.js"
   ]
 }
