@@ -56,17 +56,18 @@ function App() {
           
         <div className={`header-nav ${menuOpen ? "open" : ""}`}>
           <Link to="/" className="nav-item" onClick={() => setMenuOpen(false)}>
-              {t('header.home')}
+            <span className="spanLang">{t('header.home')}<img className="menuImg" width="30px" height="30px" src={images.home} alt="home"/></span>
           </Link>
           <Link
               to="/projects"
               className="nav-item"
               onClick={() => setMenuOpen(false)}
             >
-              {t('header.projects')}
+            <span className="spanLang">{t('header.projects')}<img  className="menuImg" width="30px" height="30px" src={images.rocket} alt="rocket"/></span>
+
           </Link>
           <Link to="/cv" className="nav-item" onClick={() => setMenuOpen(false)}>
-              {t('header.cv')}
+            <span className="spanLang">{t('header.cv')}<img className="menuImg" width="30px" height="30px" src={images.cv} alt="cv"/></span>
           </Link>
         </div>
         </header>

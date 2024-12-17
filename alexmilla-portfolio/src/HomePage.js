@@ -10,7 +10,7 @@ function HomePage() {
     <div>
       <section className="card" id="inicio">
         <h2>{t('homepage.title')}</h2>
-        <img src={images.home} alt="Mi Logo" className="iconMe" />
+        <img src={images.me} alt="Mi Logo" className="iconMe" />
         <p>{t('homepage.description')}</p>
       </section>
       <section>

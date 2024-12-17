@@ -1,7 +1,8 @@
 // src/resources/images.js
 const images = {
     logo: require("./logo.png"),
-    home: require("./home.jpeg"),
+    home: require("./home.png"),
+    me: require("./me.jpeg"),
     mail: require("./email.png"),
     linkedin: require("./linkedin.png"),
     git: require("./git.png"),
