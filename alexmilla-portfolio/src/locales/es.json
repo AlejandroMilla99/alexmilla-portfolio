@@ -18,6 +18,8 @@
     "projectsPage": {
       "title": "Mis Proyectos",
       "description": "A parte de esta web usando React, esta sección recopila algunos de los proyectos en los que he estado trabajando durante estos años en los que he ido desarrollando mi interés por la programación y el aprendizaje de nuevas tecnologías.",
+      "gamebibleTitle": "GameBible - Aplicación en producción iOS, Android y Web",
+      "gamebibleDescription": " Aplicación desarrollada en Flutter que recoge diferentes minijuegos, cuenta con apoyo en Firebase para el backend. Dispone de funcionalidades como: desafíos diarios comunes para todos los usuarios que se actualizan cada 24h, notificaciones push de aviso para los desafíos, traducción total en inglés y español, sistema de logros, rankings de puntuaciones globales sincronizados con Firestore, customización de perfil para todo usuario, etc.",
       "calculatorTitle": "Calculadora de riesgo con Machine Learning para pacientes oncológicos",
       "calculatorDescription": "Proyecto final realizado para Ingeniería Informática. Con una base de datos MySQL que recopila características de hasta 300 pacientes, incorpora un modelo de aprendizaje automático que predice la supervivencia a la enfermedad que padecían. Es un sitio web construida a partir de Python, PHP, JavaScript y HTML.",
       "sorareTitle": "Máquina de datos para NBA Sorare",

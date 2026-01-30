@@ -18,6 +18,8 @@
     "projectsPage": {
       "title": "My Projects",
       "description": "Apart from this website using React, this section compiles some of the projects that I have been working on during these years in which I have been developing my interest in programming and learning new technologies.",
+      "gamebibleTitle": "GameBible - iOS, Android and Web Application in production",
+      "gamebibleDescription": " Application developed in Flutter that collects different minigames, supported by Firebase for the backend. It has features such as: common daily challenges for all users that update every 24h, push notifications for challenge alerts, full translation in English and Spanish, achievement system, global rankings of puntuation syncronized with Firestore and profile customization for every user.",
       "calculatorTitle": "Machine Learning risk calculator for cancer patients",
       "calculatorDescription": "Final project made for Computer Engineering. With a MySQL database that compiles characteristics of up to 300 patients, it incorporates a machine learning model that predict survival from the disease they suffered from. It is a website based on Python, PHP, JavaScript and HTML.",
       "sorareTitle": "NBA Sorare Data Machine",

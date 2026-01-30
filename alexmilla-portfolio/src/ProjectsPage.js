@@ -4,7 +4,7 @@ import images from "./resources/images";
 import { useTranslation } from "react-i18next";
 
 function ProjectsPage() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <div className="App">
@@ -12,6 +12,22 @@ function ProjectsPage() {
       <section className="card">
         <h2>{t('projectsPage.title')}</h2>
       <p>{t('projectsPage.description')}</p>
+      </section>
+      <section className="card project-detail">
+        <h3>{t('projectsPage.gamebibleTitle')}</h3>
+        <p>{t('projectsPage.gamebibleDescription')}</p>
+        {i18n && (i18n.language || '').startsWith('es') ? (
+          <p>Ver más: <a href="https://gamebible.es/jugar" target="_blank" rel="noopener noreferrer">gamebible.es/jugar</a></p>
+        ) : (
+          <p>See more: <a href="https://gamebible.es/play" target="_blank" rel="noopener noreferrer">gamebible.es/play</a></p>
+        )}
+        
+        <div className="icon-collector">
+          <img src={images.flutter} alt="Flutter" className="icon" /><img src={images.firebase} alt="Firebase" className="icon" />
+        </div>
+        <div className="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_e2j1xCJwW8?si=n3ld1pLLQBqsQgQI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
       </section>
       <section className="card project-detail">
         <h3>{t('projectsPage.calculatorTitle')}</h3>

@@ -228,7 +228,10 @@ function CVPage() {
             <a href={process.env.PUBLIC_URL + '/resources/FDMcert.pdf'} target="_blank" rel="noopener noreferrer">Digital Marketing Google certificate</a>
           </li>
           <li>
-            {t('cvPage.flutterCert')}
+            <a href="https://academy.cognigy.com/certificates/eaaw3q9bts" target="_blank" rel="noopener noreferrer"> Certified Specialist in Cognigy.AI conversational artificial intelligence</a>
+          </li>
+          <li>
+            <a href="https://androidatc.com/_transcript.php?action=public&u=kc7X0N7Q28WfmaOV267I19vYzaakll7G4Q%3D%3D" target="_blank" rel="noopener noreferrer">Flutter Certified Application Developer</a>
           </li>
         </ul>
       </section>
