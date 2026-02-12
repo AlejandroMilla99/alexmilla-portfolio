@@ -26,8 +26,7 @@ function ProjectsPage() {
           <img src={images.flutter} alt="Flutter" className="icon" /><img src={images.firebase} alt="Firebase" className="icon" />
         </div>
         <div className="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/_e2j1xCJwW8?si=n3ld1pLLQBqsQgQI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/h9Xd44i96iY?si=7YnklHkildy4IYc-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
       </section>
       <section className="card project-detail">
         <h3>{t('projectsPage.calculatorTitle')}</h3>
